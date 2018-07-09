@@ -1,0 +1,21 @@
+﻿@model CustomerManager.Models.ListCustomersModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Customers</title>
+</head>
+<body>
+    <div>
+        @foreach (var customer in Model.Customers)
+        {
+            <p>@customer.FirstName @customer.LastName</p>
+        }
+    </div>
+</body>
+</html>
