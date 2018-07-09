@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DatabaseManager\DatabaseManager.csproj" />
+    <ProjectReference Include="..\RealDatabaseManager\RealDatabaseManager.csproj" />
   </ItemGroup>
 
 </Project>

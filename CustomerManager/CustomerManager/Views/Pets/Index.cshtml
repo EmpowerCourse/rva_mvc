@@ -1,0 +1,21 @@
+﻿@model CustomerManager.Models.ListPetsModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Pets</title>
+</head>
+<body>
+    <div>
+        @foreach (var pet in Model.Pets)
+        {
+            <p>@pet.Name @pet.Age @pet.Color</p>
+        }
+    </div>
+</body>
+</html>
