@@ -13,6 +13,7 @@
       "launchBrowser": true,
       "launchUrl": "api/values",
       "environmentVariables": {
+        "PetsConStr": "Server=.;Database=PetsDatabase;Trusted_Connection=true;",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
@@ -21,6 +22,7 @@
       "launchBrowser": true,
       "launchUrl": "api/values",
       "environmentVariables": {
+        "PetConStr": "Server=.;Database=PetsDatabase;Trusted_Connection=true;",
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "applicationUrl": "http://localhost:62909/"
