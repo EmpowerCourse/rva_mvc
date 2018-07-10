@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Test Page</title>
+    </head>
+    <body>
+        <div>
+            Test Page
+        </div>
+        <script src="jquery-3.3.1.js"></script>
+        <script>
+            $(document).ready(function () {
+                var data = { FirstName: "Alice", LastName: "Smith", Age: 37 };
+                var dataString = JSON.stringify(data);
+                $.ajax({
+                    url: "http://localhost:62955/api/Customers",
+                    contentType: "application/json",
+                    data : dataString,
+                    type: "POST"
+                });
+            });
+        </script>
+    </body>
+</html>
